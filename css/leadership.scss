@@ -688,7 +688,7 @@ body {
                 position: static;
                 // @include background_gradient( bottom,  #0f62a8, #5ba2e2 );
                 background: linear-gradient(to bottom,  $lighter, $darker );
-                border-radius: initial;
+                border-radius: inherit;
                 
                 // max-width: 180px;
                 // padding-top: 20%;

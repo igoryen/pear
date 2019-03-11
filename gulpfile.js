@@ -19,7 +19,8 @@ function defaultTask(done) {
 
 var input = [
   // 'css/debug-desktop-first.scss', 
-  'css/debug-mobile-first.scss', 
+  //'css/debug-mobile-first.scss', 
+  'css/modernscale.scss',  
   'css/globals.scss',
   'css/header.scss', 
   'css/front-page.scss', // Home page  
@@ -28,7 +29,8 @@ var input = [
   'css/process-diagram.scss', // Home page
   'css/solutions.scss',
   'css/contact-us.scss',
-  'css/about-us.scss', 
+  'css/about-us.scss', // About Us page
+  'css/leadership.scss', // About Us page
   'css/login.scss', 
   'css/footer.scss'  
 ];
@@ -83,7 +85,7 @@ gulp.task('sass', function () {
     .pipe(concat('all.css'))
 
 
-    .pipe(cleanCSS())
+    // .pipe(cleanCSS())
     // .pipe(sourcemaps.write()) // 6
 
     .pipe(sourcemaps.write('.')) // 7
@@ -107,7 +109,6 @@ gulp.task('scripts', function(){
     .pipe(sourcemaps.init())
     // .pipe(useref())
     .pipe(strip()) // uglify strips comments too but also uglifies
-    .pipe(concat('all.js')) // concatenates all JS files into one
     // Minifies only if it's a JavaScript file
     // .pipe(gulpIf('*.js', uglify())) // works but deactivated
     .pipe(sourcemaps.write('.'))

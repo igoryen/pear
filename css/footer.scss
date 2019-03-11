@@ -19,6 +19,7 @@
     }
 
     .footer-group {
+        max-width: 80%; // IE hack!
     	// border: 1px dashed white;
     	// order: 2;
     	&.copyright {
