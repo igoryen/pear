@@ -1,0 +1,182 @@
+@import '_variables';
+
+// Section: INTRO
+#nrs-advantage {
+	display: flex;
+	// border: 3px solid red;
+	flex-direction: column;
+    align-items: center;
+}
+
+.nrs-benefits-section {
+	// border: 3px solid orange;
+	max-width: 120rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nrs-benefits-section-chunk {
+	// border: 5px solid green;
+	// width: 50rem;
+	// max-width: 50rem;
+    flex: auto;
+    // width: 50rem;
+    flex: 1 0 25rem;
+    margin: 0 1rem 3rem;
+    // margin-bottom: 3rem;
+    // margin-left: 1rem;
+    img {
+    	width: 100%;
+    }
+
+    &:not(.map) {
+    	// border: 3px dashed red;
+    	padding: 0 2rem;
+    }
+
+    //
+    // &.quote {
+    // 	position: relative;
+    // 	&:before {
+    // 	 	position: absolute;
+    // 	 	top: -2rem;
+    // 	 	left: 0rem;
+	   //  	content:"\201C";
+	   //  	font-size: 8rem;
+	   //  	font-family: 'Times New Roman', serif;
+	   //  	color: $sunset-orange;
+	   //  	font-weight: bold;
+
+	   //  }
+	   //  &:after {
+    // 	 	position: absolute;
+    // 	 	bottom: 3rem;
+    // 		right: 0;
+	   //  	content:"\201D";
+	   //  	font-size: 8rem;
+	   //  	font-family: 'Times New Roman', serif;
+	   //  	color: $sunset-orange;
+	   //  	font-weight: bold;
+
+	   //  }
+	   //  .nrs-quote-text {
+	   //  	padding-left: 2rem;
+	   //  }
+    // }
+
+    .nrs-quote-text {
+    	position: relative;
+    	span {
+	    	display: inline;
+	    	&.quote {
+	    		// position: absolute;
+	    		// left: 0;
+	    		// content:"\201C";
+		    	// font-size: 8rem;
+		    	// font-family: 'Times New Roman', serif;
+		    	// color: $sunset-orange;
+		    	// font-weight: bold;
+		    	// border: 1px solid red;
+		    	&:before {
+		    	 	position: absolute;
+		    	 	top: 0rem;
+		    	 	left: -2rem;
+			    	content:"\201C";
+			    	font-size: 8rem;
+			    	font-family: 'Times New Roman', serif;
+			    	color: $sunset-orange;
+			    	font-weight: bold;
+			    	// border: 1px solid red;
+
+			    }
+	    	}
+	    	&.unquote {
+	    		// position: absolute;
+	    		// right: 0;
+	    		// content:"\201D";
+		    	// font-size: 8rem;
+		    	// font-family: 'Times New Roman', serif;
+		    	// color: $sunset-orange;
+		    	// font-weight: bold;
+		    	// border: 1px solid blue;
+		    	 &:before {
+		    	 	position: absolute;
+		    	 	bottom: -1.5rem;
+		    		right: 0;
+			    	content:"\201D";
+			    	font-size: 8rem;
+			    	font-family: 'Times New Roman', serif;
+			    	color: $sunset-orange;
+			    	font-weight: bold;
+			    	// border: 1px solid blue;
+
+			    }
+	    	}
+	    	&.quote-text {
+	    		padding: 0 4rem;
+	    	}
+	    }
+    }
+
+}
+
+.heading-understroke {
+	// padding: 1rem 10rem;
+	width: 10rem;
+	height: 0.5rem;
+	background-color: red;
+	margin-top: -1rem;
+}
+
+//-------------------
+// Quote
+//-------------------
+	.nrs-quote-text {
+		font-style: italic;
+	    font-weight: bold;
+	    font-size: 2rem;
+	    // line-height: 2.8rem;
+	    color: $dove-gray;
+	    // color: $cerulean;
+	   
+	}
+
+	.nrs-quote-author {
+		color: $sunset-orange;
+		margin-top: 1rem;
+		text-align: right;
+		font-weight: bold;
+	}
+
+//========================================================	
+
+// Section: Benefits of NRS
+#nrs-benefits {
+	// border: 5px solid blue;
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+
+    h1, h2 {
+    	text-align: center;
+    }
+	
+	
+}
+
+.nrs-benefits-group {
+	// border: 5px solid pink;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.main-feature-title {
+	color: $dove-gray;
+
+
+}
+
+//

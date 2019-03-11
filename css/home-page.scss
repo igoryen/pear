@@ -1,0 +1,104 @@
+@import '_variables';
+
+#intro-text {
+	display: flex;
+    justify-content: center;
+    // padding-top: 3%;
+    margin-bottom: 4rem;
+
+    div {
+    	// @include peggy();
+	    padding: 1rem;
+	    margin: 1rem;
+	    br {
+	    	line-height: 5rem;
+	    }
+    	
+    }
+}
+
+// box with three icons: Insight, Oversight, Intelligence
+#main-features {
+	// border: 1px dashed green;
+	display: flex;
+    flex-direction: row;
+    // flex: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+// box with icon, title, description
+.main-feature-wrapper {
+	// border: 1px dashed pink;
+	display: flex;
+    flex-direction: column;
+    align-items: center;    
+    margin: 1rem;
+    // flex: auto;
+}
+
+// icon
+.main-feature-image {
+	img {
+		width: 10rem;
+	}
+}
+
+// title
+.main-feature-title {
+	font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1.5rem 0;
+    color: #737373;
+    text-align: center;
+}
+
+//description
+.main-feature-desc {
+	text-align: center;
+}
+
+// diagram
+#tech-features {
+
+}
+
+
+
+
+
+@media ( min-width: 240px ) {
+
+	.slider-container {
+		// border: 1px dashed red;
+
+	}
+	
+	
+	#main-features {
+		// border: 1px dashed green;
+	}
+} // min 240
+
+@media ( min-width: 300px) {
+	.main-feature-wrapper {
+		width: 30rem;
+	}
+}
+
+
+@media ( min-width: 400px) {
+	.main-feature-wrapper {
+		width: 40rem;
+	}
+}
+
+
+@media ( min-width: 1280px) {
+	#intro-text {
+		div {
+			max-width: 128rem;
+		}
+	}
+}
+

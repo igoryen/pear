@@ -1,0 +1,88 @@
+@import '_variables';
+
+#nrs-about-us {
+	// background-color: yellow;
+	// border: 3px solid red;
+    display: flex;
+	justify-content: center;
+}
+
+.nrs-about-us-container {
+	// border: 3px solid blue;
+
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 120rem;
+}
+
+.nrs-about-us-text {
+	p {
+		text-align: left;
+		padding: 1rem;
+    	margin: 1rem;
+    	// max-width: 58rem;
+    	br {
+    		line-height: 5rem;
+    	}
+	}
+}
+
+.chevron {
+	&::before {
+		$height: 3rem;
+		border-style: solid;
+		border-width: $height/10 $height/10 0 0;
+		content: '';
+		display: inline-block;
+
+		height: $height/2;
+		width: $height/2;
+
+		top: 0.15em;
+		left: 0;
+
+		position: relative;
+		
+		// vertical-align: top; // unclear
+		transform: rotate(45deg);
+	}
+}
+
+.nrs-cta {
+	margin: 2rem;
+
+	a {
+
+		display: flex;
+    	// flex-wrap: wrap;
+    	justify-content: center;
+    	flex-direction: row;
+	    align-items: center;
+
+	    background-color: $silver-chalice;
+	    padding: 1rem 2rem;
+	    // border: 1px solid red;
+	    color: white;
+	    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	    font-size: 2rem;
+
+	    box-shadow: inset 1px 1px 6px 1px rgba(0,0,0,0.3);
+
+	    transition: all .2s ease-in-out;
+    	span {
+    		display: inline-block; // necessary for translateX to work.
+    		transition: all .2s ease-in-out;
+    		font-weight: bold;
+    		letter-spacing: 2px;
+    	}
+    	&:hover  {
+    		background-color: $dusty-gray;
+    		span {    			
+	    		&.chevron {
+	    			transform: translateX(.7rem);
+	    		}
+	    	}
+    	}
+	}
+}

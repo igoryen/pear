@@ -1,0 +1,73 @@
+@import '_variables';
+
+#n_albert {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 7rem;
+
+    .n_jonathan {
+        border: 3px dashed green;
+    }
+
+    .n_joan {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+
+        @include box_with_inset_borders();      
+
+    }
+    .n_mildred {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .n_katherine {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        input {
+            padding: 1rem 0.5rem;
+            margin: 1rem 0;
+            font-size: 2rem;
+            text-align: center;
+            border-radius: 5px;
+
+        }
+    }
+}
+
+@media ( min-width: 300px ){
+    #n_albert {
+        // border: 1px solid red;
+        .n_joan {
+            // border: 3px dashed blue;
+            max-width: 30rem;
+            width: 100%;
+            padding: 2rem 0 2rem;
+            background-color: #fff;
+
+        }
+        .n_justin {
+            display: flex;
+            width: 100%;
+            margin-top: 1rem;
+            
+            a {
+                border: 1px solid green;
+                width: 100%;
+                padding: 1rem;
+                text-align: center;
+                background-color: $cello;
+                color: #fff;
+                padding: 1.5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}

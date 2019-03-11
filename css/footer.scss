@@ -1,0 +1,35 @@
+@import "_variables";
+
+#footer-container {
+	// background-color: $cello; 
+	color: #fff;
+    display: flex;
+    justify-content: center;
+
+    .footer-content-wrapper {
+    	// border: 1px solid red;
+    	width: 100%;
+    	max-width: 100rem;
+    	display: flex;
+    	// flex-direction: row;
+    	flex-direction: column;
+    	align-items: center;
+    	// justify-content: center;
+    	justify-content: space-between;
+    }
+
+    .footer-group {
+    	// border: 1px dashed white;
+    	// order: 2;
+    	&.copyright {
+    		color: rgba(255, 255, 255, 0.5);
+    		font-size: 1.4rem;
+    		line-height: 2rem;
+    		// order: 1;
+    		padding: 1rem 0 0 1rem;
+    		margin-bottom: 3rem;
+    		text-align: center;
+    	}
+    }
+
+}
