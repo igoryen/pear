@@ -2025,6 +2025,7 @@ input {
   #nrs_news_post article {
     padding: 2% 5% 3% 5%;
     width: auto;
+    margin-top: 2em;
   }
 }
 
