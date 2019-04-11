@@ -20,19 +20,23 @@ function defaultTask(done) {
 var input = [
   // 'css/debug-desktop-first.scss', 
   //'css/debug-mobile-first.scss', 
-  'css/modernscale.scss',  
-  'css/globals.scss',
-  'css/header.scss', 
-  'css/front-page.scss', // Home page  
-  'css/home-page.scss', // Home page
-  'css/home-page-carousel.scss', // Home page
-  'css/process-diagram.scss', // Home page
-  'css/solutions.scss',
-  'css/contact-us.scss',
-  'css/about-us.scss', // About Us page
-  'css/leadership.scss', // About Us page
-  'css/login.scss', 
-  'css/footer.scss'  
+  'css/scss/modernscale.scss',  
+  'css/scss/globals.scss',
+  'css/scss/header.scss', 
+  'css/scss/front-page.scss', // Home page  
+  'css/scss/home-page.scss', // Home page
+  'css/scss/home-page-carousel.scss', // Home page
+  'css/scss/process-diagram.scss', // Home page
+  'css/scss/solutions.scss',
+  'css/scss/contact-us.scss',
+  'css/scss/about-us.scss', // About Us page
+  'css/scss/page-news.scss', // page News
+  'css/scss/page-news-post.scss', // page with single news post
+  'css/scss/page-search.scss', // page used for search
+  'css/scss/content-excerpt.scss', //
+  'css/scss/leadership.scss', // page Leadership
+  'css/scss/login.scss', 
+  'css/scss/footer.scss'  
 ];
 var output = 'css/compiled/';
 
