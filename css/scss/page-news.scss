@@ -110,8 +110,10 @@
 .news-post-thumbnail-link {
 	margin-bottom: 20px;
 	position: relative;
-	display: block;
+	// display: block;
+	display: none !important;
 	width: 100%;
+
 }
 .news-post-thumbnail {
 	padding-bottom: calc( 0.15 * 100% );
