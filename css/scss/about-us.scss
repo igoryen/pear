@@ -57,9 +57,17 @@
 	}
 }
 
+.nrs-cta-group {
+	width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .nrs-cta {
 	margin: 2rem;
-	max-width: 87%;
+	
+	width: 100%;
 
 	a {
 
@@ -93,5 +101,23 @@
 	    		}
 	    	}
     	}
+	}
+}
+
+@media screen and (min-width: 300px) {
+	.nrs-cta {
+		max-width: 87%;
+	}
+}
+
+
+@media screen and (min-width: 500px) {
+	.nrs-cta-group {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.nrs-cta {
+		max-width: 20em;
 	}
 }
